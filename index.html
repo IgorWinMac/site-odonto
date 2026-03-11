@@ -219,7 +219,7 @@
 
     <div class="contato-container">
 
-        <form class="form-contato">
+        <form class="form-contato" action="" method="post" onsubmit="return confirmarEnvio()">
             <input type="text" placeholder="Seu nome" required>
             <input type="email" placeholder="Seu e-mail" required>
             <input type="tel" placeholder="Seu telefone">
@@ -259,8 +259,4 @@
 </body>
 </html>
 
-<script>
-function mostrarAlerta(){
-    alert("Voce será direcionado para página que fala sobre nossos tratamentos.");
-}
-</script>
+
