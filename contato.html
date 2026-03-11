@@ -78,7 +78,7 @@
 
     <div class="contato-container">
 
-        <form class="form-contato">
+        <form class="form-contato" action="https://formsubmit.co/candangobsb17@gmail.com" method="post" onsubmit="return confirmarEnvio()">
             <input type="text" placeholder="Seu nome" required>
             <input type="email" placeholder="Seu e-mail" required>
             <input type="tel" placeholder="Seu telefone">
@@ -110,5 +110,11 @@
 </html>
 
 <script>
-alert("Bem-vindo ao nosso site odontológico! Para as empresas que desejam oferecer materiais ou equipamentos por favor tenha o seu cnpj ativo!");
+function confirmarEnvio() {
+if (confirm("Deseja realmente enviar os dados para o banco?")) {
+return true; // envia para o banco
+} else {
+return false; // cancela o envio
+}
+}
 </script>
