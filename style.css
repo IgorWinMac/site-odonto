@@ -87,14 +87,6 @@ section h2 {
 
 /* SEÇÃO TRATAMENTOS */
 
-#servicos {
-    width: 100%;
-    padding: 50px 20px;
-    margin: 0;
-    text-align: center;
-    background: white;
-}
-
 #servicos h2 {
     text-align: center;
     margin: 0 auto 30px;
@@ -387,18 +379,7 @@ footer {
 }
 
 /* Card */
-#servicos article {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
+
 
 #servicos article h3 {
     background-color: #00bcd4;
@@ -577,6 +558,89 @@ body #servicos .tratamentos-container article img {
     object-fit: cover !important;
     margin: 0 !important;
 }
+
+
+/* TRATAMENTOS */
+
+#servicos-tratamentos {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#servicos-tratamentos h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+#servicos-tratamentos .tratamentos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#servicos-tratamentos article {
+    width: 250px;
+    flex: 0 1 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#servicos-tratamentos article:hover {
+    transform: translateY(-5px);
+}
+
+#servicos-tratamentos article h3 {
+    width: 100%;
+    font-size: 20px;
+    background-color: #00bcd4;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#servicos-tratamentos article img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0 15px 0;
+}
+
+#servicos-tratamentos article p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    #servicos-tratamentos .tratamentos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #servicos-tratamentos article {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
 
 @media (max-width: 600px) {
     body #servicos .tratamentos-container {
