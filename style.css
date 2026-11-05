@@ -85,10 +85,12 @@ section h2 {
 }
 
 
-/* SEÇÃO TRATAMENTOS */
+
 #servicos {
+    width: 100%;
     padding: 50px 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #servicos h2 {
@@ -96,41 +98,48 @@ section h2 {
 }
 
 .tratamentos-container {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 25px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .tratamentos-container article {
-    width: 280px;
+    flex: 0 1 250px;
+    max-width: 250px;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 12px;
     background: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     text-align: center;
-    transition: transform 0.3s ease;
 }
 
-.tratamentos-container article:hover {
-    transform: translateY(-8px);
-}
-
-.tratamentos-container img {
+.tratamentos-container article img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.tratamentos-container h3 {
-    margin-bottom: 15px;
+.tratamentos-container article .meu-botao {
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.tratamentos-container p {
-    margin: 15px 0;
+@media (max-width: 600px) {
+    .tratamentos-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 
 @media (max-width: 600px) {
     .tratamentos-container article {
