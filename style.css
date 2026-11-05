@@ -88,19 +88,16 @@ section h2 {
 /* SEÇÃO TRATAMENTOS */
 
 #servicos {
-    display: block;
     width: 100%;
     padding: 50px 20px;
-    margin: 0 auto 10px;
+    margin: 0;
     text-align: center;
-    box-sizing: border-box;
+    background: white;
 }
 
 #servicos h2 {
-    display: block;
-    width: 100%;
     text-align: center;
-    margin: 0 auto 35px;
+    margin: 0 auto 30px;
 }
 
 #servicos .tratamentos-container {
@@ -110,30 +107,15 @@ section h2 {
     flex-wrap: wrap;
     gap: 25px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 #servicos .tratamentos-container article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex: 0 1 250px;
+    width: 250px;
     padding: 20px;
-    margin: 0;
-    background: white;
+    background: #fff;
     border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-#servicos .tratamentos-container article h3 {
-    width: 100%;
-    background-color: #00bcd4;
-    border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 #servicos .tratamentos-container article img {
@@ -141,7 +123,9 @@ section h2 {
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 0;
 }
+
 
 #servicos .tratamentos-container article:hover {
     transform: translateY(-8px);
