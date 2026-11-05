@@ -84,54 +84,68 @@ section h2 {
     font-size: 28px;
 }
 
-
+/* CORREÇÃO DO ALINHAMENTO DE TRATAMENTOS */
 
 #servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    margin: 0 auto;
     padding: 50px 20px;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
 }
 
 #servicos h2 {
-    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 35px auto;
 }
 
 .tratamentos-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 25px;
+
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.tratamentos-container article {
+#servicos .tratamentos-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 0 1 250px;
+    width: 250px;
     max-width: 250px;
-    min-width: 0;
-    box-sizing: border-box;
+    margin: 0;
     padding: 20px;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-sizing: border-box;
     text-align: center;
 }
 
-.tratamentos-container article img {
+#servicos .tratamentos-container article img {
+    display: block;
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
-.tratamentos-container article .meu-botao {
-    display: inline-block;
-    margin-top: 10px;
+@media (max-width: 600px) {
+    .tratamentos-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 
 @media (max-width: 600px) {
     .tratamentos-container {
