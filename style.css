@@ -529,9 +529,6 @@ iframe {
     border-radius: 12px;
 }
 
-
-
-
 /* Responsividade */
 @media (max-width: 768px) {
     header {
@@ -541,5 +538,65 @@ iframe {
 
     #servicos {
         flex-direction: column;
+    }
+}
+
+
+/* CENTRALIZAÇÃO DEFINITIVA DOS TRATAMENTOS */
+
+body #servicos {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 50px 20px !important;
+    text-align: center !important;
+    float: none !important;
+}
+
+body #servicos h2 {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto 30px !important;
+}
+
+body #servicos .tratamentos-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+}
+
+body #servicos .tratamentos-container article {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 250px !important;
+    max-width: 250px !important;
+    flex: 0 1 250px !important;
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+body #servicos .tratamentos-container article img {
+    display: block !important;
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 600px) {
+    body #servicos .tratamentos-container {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }
