@@ -1,287 +1,202 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odontologia</title>
+    <meta name="description" content="Clínica odontológica especializada em saúde bucal e tratamentos dentários.">
+    <title>Odontologia | Página Inicial</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="img/dente.jpg" alt="">
-        </div>
+<header>
+    <div class="logo">
+        <img src="img/dente.jpg" alt="Logo da clínica odontológica">
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="tratamento.html">Tratamentos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="tratamento.html">Tratamentos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Conteúdo principal -->
-    <main>
+<main>
 
-        <section id="banner">
-            <h2>Bem-vindo ao meu site</h2>
-            <p>A qualidade de vida começa pela saude bucal.</p>
-            <p>Início</p>
-        </section>
+    <section id="banner">
+        <h1>Bem-vindo ao nosso site</h1>
+        <p>A qualidade de vida começa pela saúde bucal.</p>
+        <a href="tratamento.html" class="meu-botao">Conheça nossos tratamentos</a>
+    </section>
 
     <section id="sobre">
-    <div class="sobre-container">
-        <!-- Texto à esquerda -->
-        <div class="sobre-texto">
-            <h2>Renove seu sorriso com naturalidade.</h2>
-            <p>
-                Somos uma clínica odontológica dedicada a oferecer os melhores tratamentos para você.
-                Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem.
-            </p>
-            <p>
-                Buscamos sempre a excelência, conforto e segurança em cada atendimento.
-            </p>
-<div class="botao-renove">
-    <a href="" class="meu-botao">Saiba Mais</a>
-</div>
-                
-           
-        </div>
+        <div class="sobre-container">
 
-        <a href="https://wa.me/5511999999999" 
-                class="whatsapp-btn" 
-                target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-        </a>
+            <div class="sobre-texto">
+                <h2>Renove seu sorriso com naturalidade.</h2>
 
-        <!-- Imagem à direita -->
-            <div class="sobre-imagem">
-                <img src="img/sorriso3.webp" alt="Equipe da clínica odontológica">
+                <p>
+                    Somos uma clínica odontológica dedicada a oferecer
+                    os melhores tratamentos para você. Nossa equipe é
+                    formada por profissionais qualificados e apaixonados
+                    pelo que fazem.
+                </p>
+
+                <p>
+                    Buscamos sempre a excelência, conforto e segurança
+                    em cada atendimento.
+                </p>
+
+                <div class="botao-renove">
+                    <a href="sobre.html" class="meu-botao">Saiba Mais</a>
+                </div>
             </div>
+
+            <div class="sobre-imagem">
+                <img src="img/sorriso3.webp"
+                     alt="Sorriso saudável">
+            </div>
+
         </div>
     </section>
 
     <section>
         <div class="container">
-            <img src="img/aparelho4.webp" alt="Descrição da imagem">
-        <div class="texto-aparelho">
-            <h2>Conheça os aparelhos ortodonticos que disponibilizamos.</h2>
-            <p> Somos uma clínica odontológica dedicada a oferecer os melhores tratamentos para você.
-                Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem.
-        </p>
-         <p>
-                Buscamos sempre a excelência, conforto e segurança em cada atendimento.
-            </p>
 
-      <a href="" class="meu-botao">Saiba Mais</a>
-        </div>
-            
+            <img src="img/aparelho4.webp"
+                 alt="Aparelho ortodôntico">
+
+            <div class="texto-aparelho">
+                <h2>Conheça os aparelhos ortodônticos que disponibilizamos.</h2>
+
+                <p>
+                    Oferecemos tratamentos ortodônticos para melhorar
+                    o alinhamento dos dentes e proporcionar mais
+                    qualidade de vida.
+                </p>
+
+                <p>
+                    Buscamos sempre a excelência, conforto e segurança
+                    em cada atendimento.
+                </p>
+
+                <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
+            </div>
+
         </div>
     </section>
 
+    <section id="depoimento">
+        <h2>Depoimentos</h2>
 
-       <section id="depoimento">
-    <h2>Depoimentos</h2>
+        <div class="depoimentos-container">
 
-    <div class="depoimentos-container">
+            <article class="card-depoimento">
+                <p>"Excelente atendimento! Recomendo muito."</p>
+                <h3>— Maria Silva</h3>
+            </article>
 
-        <div class="card-depoimento">
-            <p>"Excelente atendimento! Recomendo muito."</p>
-            <h4>— Maria Silva</h4>
+            <article class="card-depoimento">
+                <p>"Profissionais incríveis e ambiente muito agradável."</p>
+                <h3>— João Souza</h3>
+            </article>
+
+            <article class="card-depoimento">
+                <p>"Meu tratamento ficou perfeito, estou muito feliz."</p>
+                <h3>— Ana Oliveira</h3>
+            </article>
+
         </div>
-
-        <div class="card-depoimento">
-            <p>"Profissionais incríveis e ambiente muito agradável."</p>
-            <h4>— João Souza</h4>
-        </div>
-
-        <div class="card-depoimento">
-            <p>"Meu tratamento ficou perfeito, estou muito feliz."</p>
-            <h4>— Ana Oliveira</h4>
-        </div>
-
-        </div>
-
     </section>
 
+    <section id="servicos">
+        <h2>Nossos Tratamentos</h2>
 
+        <div class="tratamentos-container">
 
+            <article>
+                <h3>Restaurações</h3>
+                <img src="img/restaurar.jpg" alt="Restauração dentária">
+                <p>Recupere a saúde dos seus dentes.</p>
+                <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
+            </article>
 
-<section id="servicos">
-    <h2>Tratamentos</h2>
+            <article>
+                <h3>Ortodontia</h3>
+                <img src="img/ortodontia1.png" alt="Aparelho ortodôntico">
+                <p>Alinhe seus dentes e melhore seu sorriso.</p>
+                <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
+            </article>
 
-    <div class="tratamentos-container">
+            <article>
+                <h3>Clareamento</h3>
+                <img src="img/clareamento.jpeg" alt="Clareamento dental">
+                <p>Tenha um sorriso mais branco.</p>
+                <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
+            </article>
 
-        <article>
-            <h3>Restaurações</h3>
-            <img src="img/restaurar.jpg" alt="Restaurações">
-            <p>Recupere a saúde dos seus dentes.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+            <article>
+                <h3>Implantodontia</h3>
+                <img src="img/implante.webp" alt="Implante dentário">
+                <p>Recupere dentes perdidos.</p>
+                <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
+            </article>
 
-        <article>
-            <h3>Ortodontia</h3>
-            <img src="img/ortodontia1.png" alt="Ortodontia">
-            <p>Alinhe seus dentes e melhore seu sorriso.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+        </div>
+    </section>
 
-        <article>
-            <h3>Clareamento</h3>
-            <img src="img/clareamento.jpeg" alt="Clareamento">
-            <p>Tenha um sorriso mais branco.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+    <section id="dicas">
+        <h2>Dicas de Saúde Bucal</h2>
 
-        <article>
-            <h3>Implantodontia</h3>
-            <img src="img/implante.webp" alt="Implantodontia">
-            <p>Recupere dentes perdidos.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+        <div class="videos-container">
 
-         <article>
-            <h3>Implantodontia</h3>
-            <img src="img/implante.webp" alt="Implantodontia">
-            <p>Recupere dentes perdidos.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+            <iframe
+                src="https://www.youtube.com/embed/BBvHrSNR7f4"
+                title="Dica de saúde bucal 1"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
 
-         <article>
-            <h3>Implantodontia</h3>
-            <img src="img/implante.webp" alt="Implantodontia">
-            <p>Recupere dentes perdidos.</p>
-            <a href="tratamento.html" class="meu-botao">Saiba Mais</a>
-        </article>
+            <iframe
+                src="https://www.youtube.com/embed/BBvHrSNR7f4"
+                title="Dica de saúde bucal 2"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
 
-    </div>
-</section>
+            <iframe
+                src="https://www.youtube.com/embed/BBvHrSNR7f4"
+                title="Dica de saúde bucal 3"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
 
+        </div>
+    </section>
 
+</main>
 
- <section id="dicas">
-    <h2>Dicas de Saúde Bucal</h2>
+<a href="https://wa.me/5511999999999"
+   class="whatsapp-btn"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Fale conosco pelo WhatsApp">
 
-    <div class="videos-container">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-         <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 1"
-            allowfullscreen>
-        </iframe>
+<footer>
+    <p>&copy; 2026 - Clínica Odontológica | Todos os direitos reservados</p>
+</footer>
 
-        <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 2"
-            allowfullscreen>
-        </iframe>
-
-        <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 3"
-            allowfullscreen>
-        </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 3"
-            allowfullscreen>
-        </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 3"
-            allowfullscreen>
-        </iframe>
-
-          <iframe
-            src="https://www.youtube.com/embed/BBvHrSNR7f4"
-            title="Dica de saúde bucal 3"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-</section>
-
-          <section id="contato">
-            <h2>Nossos Contatos</h2>
-             <div class="logo">
-                <img src="img/insta.jpg" alt="">
-                <p>Texto explicando sobre o contato1.</p>
-            </div>
-
-            <div class="logo">
-                <img src="img/facebook.png" alt="">
-                <p>Texto explicando sobre o contato2.</p>
-            </div>
-
-            <div class="logo">
-                <img src="img/twitter-x-logo-png-9.png" alt="">
-                <p>Texto explicando sobre o contato3.</p>
-            </div>
-
-        </section>  
-        
-        <section>
-
-        <h2>Formulario para empresas que queiram fornecer materiais ou equipamentos.</h2>
-
-
-    <div class="contato-container">
-
-        <form class="form-contato" action="https://formsubmit.co/candangobsb17@gmail.com" method="post" onsubmit="return confirmarEnvio()">
-            <input type="text" placeholder="Seu nome" name="nome" required>
-            <input type="email" placeholder="Seu e-mail" name="email" required>
-            <input type="tel" placeholder="Seu telefone" name="telefone">
-            <textarea placeholder="Digite sua mensagem" rows="5" name="mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-
-    </div>
-
-        </section>
-
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 - Meu Site | Todos os direitos reservados</p>
-    </footer>
-
-<script>
-            const articles = document.querySelectorAll("article");
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-                });
-            }, {
-                threshold: 0.2
-            });
-
-            articles.forEach(article => {
-                observer.observe(article);
-            });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
-
-<script>
-function confirmarEnvio() {
-if (confirm("Deseja realmente enviar os dados para o banco?")) {
-return true; // envia para o banco
-} else {
-return false; // cancela o envio
-}
-}
-</script>
